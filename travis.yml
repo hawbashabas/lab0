@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk11
+cache:
+  directories:
+  - $HOME/.m2git
+script:
+  - cd src/example
+  - mvn clean verify --fail-at-end
